@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="weather-app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"> 
+    <title>Ken Weather</title>
+</head>
+<body>
+    <main class="maine">
+        <div class="sun">
+            <img src="sun-svgrepo-com.svg" alt="" class="time-of-day">
+        </div>
+     
+        <div id="background-wrap">
+            <div class="x1">
+                <div class="cloud"></div>
+            </div>
+        
+            <div class="x2">
+                <div class="cloud"></div>
+            </div>
+        
+            <div class="x3">
+                <div class="cloud"></div>
+            </div>
+        
+            <div class="x4">
+                <div class="cloud"></div>
+            </div>
+        
+            <div class="x5">
+                <div class="cloud"></div>
+            </div>
+        </div>
+        <section class="weather-widget">
+            <h1 class="widget-title">Ken Weather</h1>
+            <section class="tooglebuttonwrapper">
+                <div class="lefttoggle" onclick="Moveleft()"></div>
+                <div class="righttoggle" onclick="Moveright()"></div>
+                <div class="togglecircle"></div>
+            </section>
+            <div class="inputs-group">
+                <label for="city" class="cityLabel">Enter Your city name below:</label><br>
+                <div class="main-input-wrapper">
+                    <input type="text" class="cityInput" id="city" placeholder="City"> 
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <div class="errormessage"></div>
+                </div>
+                
+                 <br>
+                <p class="orSpan">Or</p><br>
+                <div class="locationbutton">
+                    <button class="CurlocationBtn">Use current Location</button>
+                </div>
+               
+            </div>
+            <div class="displayWeather">
+                <p class="cityName">
+                    <!-- buff bay<i class="fa-sharp fa-solid fa-location-dot"></i> -->
+                </p>
+                <div class="weatherimg-wrapper">
+                    <img src="" alt="" class="WeatherImage">
+                    <p class="weather-descr">
+                        <!-- partly cloudy -->
+                    </p>
+                    <div class="tempdisplay">
+                        <!-- 23°C -->
+                    </div>
+                    <div class="minor-info">
+                        <p class="humidity">
+                            <!-- <i class="fa-solid fa-droplet"></i> 50% <br>
+                        humidity  -->
+                    </p>
+                        <p class="wind-speed">
+                            <!-- <i class="fa-solid fa-wind"></i>18 k/mh <br>
+                        Wind speed -->
+                    </p>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </section>
+    </main>
+    
+    
+</body>
+<script src="weather-app.js"></script>
+</html>
